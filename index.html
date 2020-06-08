@@ -1,0 +1,32 @@
+<title>Copy to cipboard</title>
+<style>
+
+</style>
+<body>
+<h2 id="title">Copy to clipboard</h2>
+<input id="myInput" type="number">
+<button onclick="myFunction()">Copy</button>
+
+</body>
+
+<script type="text/javascript">
+
+
+
+function myFunction(){
+
+    
+   myInput.value++;
+    var copyText = document.getElementById("myInput");
+
+    copyText.select();
+    
+
+    document.execCommand("copy");
+   
+    
+}
+
+
+
+</script>
